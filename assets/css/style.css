@@ -1,20 +1,44 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-
 .font-rbt-cond {
     font-family: 'Roboto Condensed', sans-serif;
 }
-
 .brand-logo img {
     margin-top: 0.8rem;
     max-height: 35px;
 }
-
-#index-banner{
-    background: url(../img/home/backlit-bright-dawn-697243.jpg) no-repeat center;
+h1 {
+    font-size: 3.2rem;
+}
+@media (max-width: 575px) {
+    h1 {
+        font-size: 2.2rem;
+    } 
+}
+.deep-purple.accent-trazendit {
+    background-color: #5F4BFF !important;
+}
+.deep-purple-text.text-accent-trazendit {
+    color: #5F4BFF !important;
+}
+.text-shadow{
+    text-shadow: 0px 2px 0px #5e5e5e;
+}
+/* Home */
+.banner-home{
+    background: url(../img/home/299760-P7FMP9-600.jpg) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 450px;
+    
 }
+@media (max-width: 575px) {
+    .banner-home {
+        height: 300px;
+    } 
+}
+
+/* End Home */
