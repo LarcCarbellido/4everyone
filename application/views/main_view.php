@@ -1,37 +1,83 @@
 <!DOCTYPE html>
   <html>
     <head>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+      <link href="<?= base_url('assets/css/style.css'); ?>" rel="stylesheet">
+      <link href="<?= base_url('assets/css/sidenav.css'); ?>" rel="stylesheet">     
     </head>
 
     <body>
 
-    <nav class="light-blue lighten-1" role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="#">Navbar Link</a></li>
-        </ul>
+    <nav class="white">
+        <div class="container">
+            <a href="#" data-target="slide-out" class="left sidenav-trigger  show-on-large deep-purple-text text-accent-3"><i class="material-icons">menu</i></a>
 
-        <ul id="nav-mobile" class="sidenav">
-            <li><a href="#">Navbar Link</a></li>
-        </ul>
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="#" class="brand-logo center"><img class="responsive-img" src="<?= base_url('assets/img/logo.png'); ?>"></a>
+
+            <div class="right  font-rbt-cond">
+             <a href="#ingresar" class="grey-text text-darken-2 hide-on-small-only">INGRESAR</a> 
+             <span class="grey-text text-darken-4 hide-on-small-only">|</span>
+             <a href="#unirse" class="deep-purple-text text-accent-3"><b>UNIRSE</b></a>
+            </div>               
         </div>
     </nav>
+
+
+        <header>
+            <ul id="slide-out" class="sidenav">
+                <li>
+                <div class="brand-logo center">
+                    <img class="responsive-img" src="<?= base_url('assets/img/logo.png'); ?>">
+                </div>    
+                </li>
+                <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li class="bold waves-effect waves-purple"><a class="collapsible-header">Pages<i class="material-icons chevron">chevron_left</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                        <li><a href="#" class="waves-effect waves-purple">Dashboard<i class="material-icons">web</i></a></li>
+                        <li><a href="#" class="waves-effect waves-purple">Fixed Chart<i class="material-icons">list</i></a></li>
+                        <li><a href="#" class="waves-effect waves-purple">Grid<i class="material-icons">dashboard</i></a></li>
+                        <li><a href="#" class="waves-effect waves-purple">Chat<i class="material-icons">chat</i></a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li class="bold waves-effect waves-purple"><a class="collapsible-header">Pages<i class="material-icons chevron">chevron_left</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                        <li><a href="#" class="waves-effect waves-purple">Dashboard<i class="material-icons">web</i></a></li>
+                        <li><a href="#" class="waves-effect waves-purple">Fixed Chart<i class="material-icons">list</i></a></li>
+                        <li><a href="#" class="waves-effect waves-purple">Grid<i class="material-icons">dashboard</i></a></li>
+                        <li><a href="#" class="waves-effect waves-purple">Chat<i class="material-icons">chat</i></a></li>
+                        </ul>
+                    </div>
+                    </li>
+                    <li class="bold waves-effect waves-purple"><a class="collapsible-header">Pages<i class="material-icons chevron">chevron_left</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                        <li><a href="#" class="waves-effect waves-purple">Dashboard<i class="material-icons">web</i></a></li>
+                        <li><a href="#" class="waves-effect waves-purple">Fixed Chart<i class="material-icons">list</i></a></li>
+                        <li><a href="#" class="waves-effect waves-purple">Grid<i class="material-icons">dashboard</i></a></li>
+                        <li><a href="#" class="waves-effect waves-purple">Chat<i class="material-icons">chat</i></a></li>
+                        </ul>
+                    </div>
+                    </li>
+                </ul> 
+        </header>
+
     <div class="section no-pad-bot" id="index-banner">
         <div class="container">
-        <br><br>
-        <h1 class="header center orange-text">Starter Template</h1>
-        <div class="row center">
-            <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-        <div class="row center">
-            <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-        </div>
-        <br><br>
-
+             
+            <h1 class="bold center white-text"><b>Asiste y crea experiencias para hacer el bien.</b> </h1>
+       
+            <div class="row center">
+                <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light deep-purple accent-3">Crea un evento</a>
+            </div>
+            <br><br>
         </div>
     </div>
 
@@ -112,13 +158,11 @@
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
         <script>
-            (function($){
-                $(function(){
-
-                    $('.sidenav').sidenav();
-
-                }); // end of document ready
-                })(jQuery); // end of jQuery name space
+           $(document).ready(function(){
+                $('.sidenav').sidenav();
+                $('.collapsible').collapsible();
+            });
+                
         </script>
     </body>
   </html>

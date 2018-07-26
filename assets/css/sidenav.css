@@ -1,0 +1,115 @@
+.sidenav-trigger {
+    margin: 0;
+}
+
+.sidenav .collapsible li,
+.sidenav.fixed .collapsible li {
+    padding: 0
+}
+
+.sidenav .collapsible-header,
+.sidenav.fixed .collapsible-header {
+    background-color: transparent;
+    border: none;
+    line-height: inherit;
+    height: inherit;
+    padding: 0 16px
+}
+
+.sidenav .collapsible-header:hover,
+.sidenav.fixed .collapsible-header:hover {
+    background-color: rgba(0, 0, 0, 0.05)
+}
+
+.sidenav .collapsible-header i,
+.sidenav.fixed .collapsible-header i {
+    line-height: inherit
+}
+
+.sidenav .collapsible-body,
+.sidenav.fixed .collapsible-body {
+    border: 0;
+    background-color: #fff
+}
+
+.sidenav .collapsible-body li a,
+.sidenav.fixed .collapsible-body li a {
+    padding: 0 23.5px 0 31px
+}
+
+.sidenav .collapsible-body>ul:not(.collapsible)>li.active,
+.sidenav.sidenav-fixed .collapsible-body>ul:not(.collapsible)>li.active {
+    background-color: #448AFF
+}
+
+.sidenav .collapsible-body>ul:not(.collapsible)>li.active a,
+.sidenav.sidenav-fixed .collapsible-body>ul:not(.collapsible)>li.active a {
+    color: #fff
+}
+
+.sidenav .collapsible-body {
+    padding: 0
+}
+
+.sidenav .collapsible {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.sidenav .collapsible>.active .collapsible-header .chevron {
+    transform: rotate(-90deg)
+}
+
+.sidenav .Scollapsible>li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    transition: background-color .2s
+}
+
+.sidenav .collapsible>li:hover {
+    background-color: rgba(0, 0, 0, 0.05)
+}
+
+.sidenav .collapsible>li.waves-effect {
+    display: block
+}
+
+.sidenav .collapsible>li:last-child {
+    border-bottom: 0
+}
+
+.sidenav .collapsible .collapsible-header {
+    text-transform: uppercase;
+    height: 64px;
+    line-height: 64px
+}
+
+.sidenav .collapsible .collapsible-header:hover {
+    background-color: transparent
+}
+
+.sidenav .collapsible .collapsible-header .chevron {
+    float: right;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 20px 0 0 0;
+    transition: transform .2s
+}
+
+.sidenav .collapsible .collapsible-body {
+    padding-bottom: 16px;
+    background-color: transparent
+}
+
+.sidenav .collapsible .collapsible-body li>a {
+    padding: 0 16px;
+    transition: background-color .2s ease-out
+}
+
+.sidenav .collapsible .collapsible-body li>a:hover,
+.sidenav .collapsible .collapsible-body li>a.active {
+    background-color: rgba(0, 0, 0, 0.07)
+}
+
+.sidenav .collapsible .collapsible-body li>a>i.material-icons {
+    margin-right: 16px
+}
