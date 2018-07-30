@@ -1,0 +1,13 @@
+MAQUETA Trazendit
+Pendientes:
+
+- Home calendario por periodo  
+ok - Home Destacados
+ok -  ome Otras actividades que inspiran
+ok - Home Footer
+- Maqueta mostra evento               
+- Maqueta login
+- Modales de Error
+- Menú sidenav completo con opciones
+- color hover o activada la opción
+- Maqueta quiero asistir.

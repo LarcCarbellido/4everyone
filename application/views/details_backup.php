@@ -76,7 +76,7 @@
             <h1 class="bold center white-text text-shadow"><b>Asiste y crea experiencias para hacer el bien.</b> </h1>
        
             <div class="row center">
-                <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light deep-purple accent-trazendit">Crea un evento</a>
+                <a href="<?= base_url(); ?>" id="download-button" class="btn-large waves-effect waves-light deep-purple accent-trazendit">Crea un evento</a>
             </div>
             <br><br>
         </div>

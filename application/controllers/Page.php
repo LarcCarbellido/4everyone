@@ -16,10 +16,10 @@ class Page extends CI_Controller {
 	
 	}
 
-	public function test()
+	public function details()
 	{
  
-		$this->load->view('test_view');
+		$this->load->view('details_view');
 	
 	}
 
